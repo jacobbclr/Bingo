@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Bingo</title>
+</head>
+
+<body>
+  <div class="min-h-full">
+    <nav id="hide" class="bg-gray-800">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+              <img class="h-8 w-8" src="Download.jpg"
+                alt="Your Company">
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  aria-current="page">TikTok</a>
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">7vsWild</a>
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Mädchen
+                  WG</a>
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Other</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page">TikTok</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">7vsWild</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Mädchen
+              WG</a>
+            <a href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Other</a>
+          </div>
+
+        </div>
+    </nav>
+
+    <header id="hide1" class="bg-white shadow">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">TikTok</h1>
+        <div id="">
+            H drücken um alles außer dem Bingo ein/auszublenden!<br>
+            In Obs einfach eine Browser source einbinden mit min - 1000px Breite und min - 770px Höhe!<br>
+            Alles kann über interagieren angepasst werden.
+          </div>
+      </div>
+    </header>
+    <main>
+      <div id="normal1" class="grid grid-cols-2 gap-4 h-full w-full bg-white">
+        <div id="normal" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 h-full w-full">
+          <div id="bingo-container" class="bingo-container w-[500px] h-[500px] bg-slate-700 ">
+            <div id="bingo-board" class="grid grid-cols-5  h-full w-full text-white font-extrabold">
+              <!-- Initial bingo board content with unique IDs -->
+              <div id="bingo-1-1"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,1</div>
+              <div id="bingo-1-2"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,2</div>
+              <div id="bingo-1-3"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,3</div>
+              <div id="bingo-1-4"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,4</div>
+              <div id="bingo-1-5"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,5</div>
+
+              <div id="bingo-2-1"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,1</div>
+              <div id="bingo-2-2"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,2</div>
+              <div id="bingo-2-3"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,3</div>
+              <div id="bingo-2-4"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,4</div>
+              <div id="bingo-2-5"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,5</div>
+
+              <div id="bingo-3-1"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,1</div>
+              <div id="bingo-3-2"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,2</div>
+              <div id="bingo_subgifts"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                Subgifts</div>
+              <div id="bingo-3-4"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,4</div>
+              <div id="bingo-3-5"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,5</div>
+
+              <div id="bingo-4-1"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,1</div>
+              <div id="bingo-4-2"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,2</div>
+              <div id="bingo-4-3"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,3</div>
+              <div id="bingo-4-4"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,4</div>
+              <div id="bingo-4-5"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,5</div>
+
+              <div id="bingo-5-1"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,1</div>
+              <div id="bingo-5-2"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,2</div>
+              <div id="bingo-5-3"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,3</div>
+              <div id="bingo-5-4"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,4</div>
+              <div id="bingo-5-5"
+                class="bg-black p-1 w-[94px] h-[94px] m-[2px]  flex items-center justify-center uppercase text-center">
+                1,5</div>
+            </div>
+          </div>
+
+        </div>
+        <div id="hide2" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 h-full w-full ">
+          <div id="checkbox-container" class="flex flex-wrap gap-4">
+
+            <div id="checkbox-container" class="flex flex-wrap gap-4">
+              <!-- Checkboxes for the provided words -->
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/6336f2fa73d0849829e8b554/4x.webp"> Weih <br> nachten
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="stegi-skippt-sich-selbst"> Stegi skippt sich selbst
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/64a57cf04a9e39329784ade4/4x.webp"> Dilosh
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/613139b2af9287c4eb608d4f/4x.webp"> Cringe
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="alpha-experte"> Alpha Experte
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="ex-story"> EX Story
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/6378b91441f9b8a067b678d0/4x.avif"> Life
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/6262fb85a15a8f41c4e34de2/4x.avif"> Hugo
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/6268904f4f54759b7184fa72/4x.webp"> Unlustiger Comedian
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="stegi-hat-of-sub"> Stegi hat OF Sub
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="stegi-switcht-den-tab"> Stegi switcht den Tab
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="unnoetiges-duett"> Unnötiges Duett
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/654453595c5d3ae50394e6dd/4x.avif"> Uuh
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/6141f07a962a60904864895e/4x.webp"> Joi
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/644b35b0e296e1bb46473248/4x.avif"> Kadse
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="schaut-in-die-cam-und-sagt-nichts"> Schaut in die Cam und sagt nichts
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/62aa1d2e961896a72c6ed753/4x.avif"> Bastight
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="couple"> Couple
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="staged-fail"> Staged Fail
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="strassen-umfrage"> Straßen Umfrage
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/61b42fd475e70d5ab2954813/4x.webp"> Uhh Twitter Like Level
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/653edb34e14850294e7d40cf/4x.avif"> Craft Attack
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="schlechte-ai"> Schlechte AI
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" data-id="https://cdn.7tv.app/emote/61a13d78ffa9aba101bb403b/4x.avif"> TOS
+                </label>
+              </div>
+            </div>
+
+
+          </div>
+          <script>
+            document.addEventListener('keydown', function (event) {
+              // Check if 'H' is pressed
+              if (event.key === 'h' || event.key === 'H') {
+                // Toggle the display property
+                
+                toggleElementDisplay('hide');
+                toggleElementDisplay('hide1');
+                toggleElementDisplay('hide2');
+                toggleElementDisplay('hide3');
+                editClasses();
+              }
+            });
+            function editClasses() {
+              const normal = document.getElementById('normal');
+              const normal1 = document.getElementById('normal1');
+              const element = document.getElementById('hide');
+              if (element.style.display === 'block'){
+              normal.classList.toggle('mx-auto', true);
+              normal.classList.toggle('max-w-7xl', true);
+              normal.classList.toggle('py-6', true);
+              normal.classList.toggle('sm:px-6', true);
+              normal.classList.toggle('lg:px-8', true);
+              normal.classList.toggle('h-full', true);
+              normal.classList.toggle('w-full', true);
+
+              normal1.classList.toggle('grid', true);
+              normal1.classList.toggle('grid-cols-2', true);
+              normal1.classList.toggle('gap-4', true);
+              normal1.classList.toggle('h-full', true);
+              normal1.classList.toggle('w-full', true);
+              normal1.classList.toggle('bg-white', true);
+            } else if ( element.style.display === 'none') {
+              normal.classList.toggle('mx-auto', false);
+              normal.classList.toggle('max-w-7xl', false);
+              normal.classList.toggle('py-6', false);
+              normal.classList.toggle('sm:px-6', false);
+              normal.classList.toggle('lg:px-8', false);
+              normal.classList.toggle('h-full', false);
+              normal.classList.toggle('w-full', false);
+
+              normal1.classList.toggle('grid', false);
+              normal1.classList.toggle('grid-cols-2', false);
+              normal1.classList.toggle('gap-4', false);
+              normal1.classList.toggle('h-full', false);
+              normal1.classList.toggle('w-full', false);
+              normal1.classList.toggle('bg-white', false);
+            }
+
+            }
+
+
+
+            function toggleElementDisplay(elementId) {
+              const element = document.getElementById(elementId);
+
+              if (element) {
+                // Toggle the display property between 'block' and 'none'
+                element.style.display = (element.style.display === '' || element.style.display === 'none') ? 'block' : 'none';
+              }
+
+
+            }
+            const checkboxes = document.querySelectorAll('#checkbox-container input[type="checkbox"]');
+            const maxAllowed = 24;
+
+            checkboxes.forEach((checkbox) => {
+              checkbox.addEventListener('change', function () {
+                const checkedCheckboxes = document.querySelectorAll('#checkbox-container input[type="checkbox"]:checked');
+
+                if (checkedCheckboxes.length > maxAllowed) {
+                  this.checked = false;
+                }
+              });
+            });
+            function addSelectedToBingo() {
+              const checkboxes = document.querySelectorAll('#checkbox-container input[type="checkbox"]:checked');
+              const bingoItems = document.querySelectorAll('#bingo-board .bg-black');
+
+              const subgiftsInput = document.getElementById('subgifts');
+              const subgiftsAmount = subgiftsInput.value + " Subgifts";
+
+              // Update the content of the "Subgifts" element              
+              const subgiftsElement = document.getElementById('bingo_subgifts');
+              if (subgiftsElement) {
+                subgiftsElement.textContent = subgiftsAmount;
+              }
+
+              // Error 
+              const errorBingo = document.getElementById('errorBingo');
+              if (checkboxes.length < 24) {
+                errorBingo.textContent = "Du Musst mindestens 24 sachen auswählen!";
+              } else {
+                errorBingo.textContent = "Erfolgreich hinzugefügt";
+              }
+
+              const elementsToExclude = ['bingo_subgifts'];
+
+              // Create a filtered array of bingo items excluding the specified elements
+              const filteredBingoItems = Array.from(bingoItems).filter(item => !elementsToExclude.includes(item.id));
+
+              let skippedLabelContent = null;
+
+              // Iterate over the filtered bingo items
+              filteredBingoItems.forEach((bingoItem, index) => {
+                // Check if there's a corresponding checkbox
+                if (index < checkboxes.length && checkboxes.length >= 24) {
+                  const labelContent = checkboxes[index].parentElement.textContent.trim();
+                  bingoItem.textContent = labelContent;
+                  bingoItem.style.backgroundImage = 'url(' + checkboxes[index].dataset.id + ')';
+                  bingoItem.style.backgroundSize = 'contain';
+                  bingoItem.style.backgroundRepeat = 'no-repeat';
+                  bingoItem.style.backgroundPosition = 'center';
+
+                } else if (index === Math.floor(filteredBingoItems.length / 2)) {
+                  // Store the label content if it's the middle item
+                  skippedLabelContent = bingoItem.textContent.trim();
+                }
+              });
+
+              // If there's no corresponding checkbox for the middle item, and there's stored content, use it
+              const middleBingoItem = bingoItems[Math.floor(bingoItems.length / 2)];
+              if (!elementsToExclude.includes(middleBingoItem.id) && skippedLabelContent !== null) {
+                middleBingoItem.textContent = skippedLabelContent;
+              }
+            }
+
+            function shuffleBingo() {
+              const bingoBoard = document.getElementById('bingo-board');
+              const bingoItems = [...document.querySelectorAll('#bingo-board .bg-black')];
+
+              // Exclude the middle item from shuffling
+              const middleItem = bingoItems.splice(Math.floor(bingoItems.length / 2), 1)[0];
+
+              // Shuffle the remaining bingo items
+              bingoItems.sort(() => Math.random() - 0.5);
+
+              // Insert the middle item back to the center
+              const middleIndex = Math.floor(bingoItems.length / 2);
+              bingoItems.splice(middleIndex, 0, middleItem);
+
+              // Update the bingo board with the shuffled items
+              bingoBoard.innerHTML = ''; // Clear the board
+              bingoItems.forEach((item) => {
+                bingoBoard.appendChild(item);
+              });
+            }
+            function getRandomInt(min, max) {
+              return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            function selectRandomCheckboxes() {
+              const checkboxes = document.querySelectorAll('#checkbox-container input[type="checkbox"]');
+              const selectedCheckboxes = [];
+
+              // Clear any existing selections
+              checkboxes.forEach((checkbox) => {
+                checkbox.checked = false;
+              });
+
+              // Select 24 random checkboxes
+              while (selectedCheckboxes.length < 24 && selectedCheckboxes.length < checkboxes.length) {
+                const randomIndex = getRandomInt(0, checkboxes.length - 1);
+                const checkbox = checkboxes[randomIndex];
+
+                if (!selectedCheckboxes.includes(checkbox)) {
+                  checkbox.checked = true;
+                  selectedCheckboxes.push(checkbox);
+                }
+              }
+            }
+            function Clone() {
+              // Sample bingo HTML content
+              const bingoHtmlContent = document.getElementById('bingo-container').outerHTML;
+
+              // Store the HTML content in local storage
+              localStorage.setItem('bingoHtmlContent', bingoHtmlContent);
+            }
+          </script>
+          <div class="gifts gap-4 mb-4">
+            <label for="subgifts" class="block text-sm font-medium leading-6 text-gray-900">Sub Gifts</label>
+            <div class="mt-2">
+              <input id="subgifts" value="15" name="subgifts" type="subgifts" autocomplete="subgifts" required
+                class="block w-50 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <div class="buttons flex gap-4 items-end mb-4">
+            <button onclick="selectRandomCheckboxes()" onclick="Clone()"
+              class="flex justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Zufällige
+              Auswahl</button>
+            <button onclick="shuffleBingo()" onclick="Clone()"
+              class="flex justify-end rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Zufällige
+              Anordnung</button>
+            <button onclick="addSelectedToBingo()" onclick="Clone()"
+              class="flex justify-end rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Zum
+              Bingo Hinzufügen
+            </button>
+          </div>
+          <div id="errorBingo">
+            
+          </div>
+          
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
